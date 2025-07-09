@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wizard Showdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <h1>Wizard Showdown</h1>
+
+    <!-- BATTLEFIELD AREA -->
+<div id="battle-scene">
+<div class="sprite-container" id="player">
+  <div class="sprite-wrapper">
+    <div class="sprite player-sprite"></div>
+  </div>
+  <p>You</p>
+</div>
+
+<div class="sprite-container" id="enemy">
+  <div class="sprite-wrapper enemy-wrapper">
+    <div class="sprite enemy-sprite"></div>
+  </div>
+  <p>Enemy Wizard</p>
+</div>
+
+
+</div>
+
+
+
+    </div>
+
+    <!-- UI AREA -->
+    <div id="ui">
+      <div class="hp-container">
+        <div class="hp-block">
+          <p>Your HP</p>
+          <div class="hp-bar"><div id="player-hp-fill" class="fill"></div></div>
+        </div>
+        <div class="hp-block">
+          <p>Enemy HP</p>
+          <div class="hp-bar"><div id="enemy-hp-fill" class="fill"></div></div>
+        </div>
+      </div>
+
+      <div id="log"></div>
+
+      <h3 id="action-label">Choose your move:</h3>
+      <div id="attack-buttons"></div>
+      <div id="shield-buttons"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
